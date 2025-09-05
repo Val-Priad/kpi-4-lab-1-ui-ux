@@ -2,6 +2,10 @@
 
 _Discipline: Components of System Engineering_
 
+## Demo
+
+[Click here to see demo](https://val-priad.github.io/kpi-4-lab-1-ui-ux/)
+
 ## Overview
 
 This repository contains the deliverables for **Lab 1**, whose task was:
