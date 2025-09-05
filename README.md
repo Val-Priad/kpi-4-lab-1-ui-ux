@@ -1,69 +1,40 @@
-# React + TypeScript + Vite
+# UI Controls Showcase – Lab 1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_Discipline: Components of System Engineering_
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains the deliverables for **Lab 1**, whose task was:
 
-## Expanding the ESLint configuration
+> “Find and describe each type of UI control specified below.
+>
+> 1. Radiobutton
+> 2. Checkbox
+> 3. Text input
+> 4. Tabs
+> 5. Button
+> 6. Text label
+> 7. Link
+> 8. Tooltip
+> 9. Dropdown list
+> 10. Data grid
+>     Add 2-3 examples to each type of UI control.”
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+I implemented a single-page website that demonstrates and briefly describes every control. Each section shows 2–3 variations (different states, styles, or options) so the reader can see typical usage.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Implemented Controls
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| #   | UI Control        | Description & Examples                                                   |
+| --- | ----------------- | ------------------------------------------------------------------------ |
+| 1   | **Radio Button**  | Three sample radio buttons in a group to toggle light/dark modes.        |
+| 2   | **Checkbox**      | Multiple checkboxes for selecting user preferences.                      |
+| 3   | **Text Input**    | Examples with placeholders, focus/hover styling.                         |
+| 4   | **Tabs**          | Three-tab widget switching between panels.                               |
+| 5   | **Button**        | Primary, secondary, and disabled button states.                          |
+| 6   | **Text Label**    | Static text labels with semantic `<label>` tags and subtle styling.      |
+| 7   | **Link**          | Normal, hover, visited states styled in brand colors.                    |
+| 8   | **Tooltip**       | Image container showing informational text on hover.                     |
+| 9   | **Dropdown List** | Menu with sub-items (hover to expand).                                   |
+| 10  | **Data Grid**     | Interactive table built with MUI `DataGrid` showing sample rows/columns. |
